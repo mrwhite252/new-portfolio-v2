@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import { BsMoonStarsFill } from 'react-icons/bs';
+import Navbar from '../components/Navbar';
 
 export default function Home() {
   return (<div>
@@ -9,9 +9,7 @@ export default function Home() {
       <link rel="icon" href="/favicon.svg" />
     </Head>
 
-    <main>
-
-    </main>
+    <Navbar />
   </div>
   )
 }
