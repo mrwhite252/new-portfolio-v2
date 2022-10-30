@@ -4,12 +4,16 @@ import React, { useState, useEffect } from 'react'
 import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from 'react-icons/ai'
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa'
 import { BsFillPersonLinesFill } from 'react-icons/bs'
-import navLogo from "../public/assets/logo-img.svg";
+import navLogo from "../public/assets/logo-img.svg"
+import { useRouter } from 'next/router'
 
 const Navbar = () => {
 
     const [nav, setNav] = useState(false)
     const [shadow, setShadow] = useState(false)
+    const [navBg, setNavBg] = useState('#ecf0f3')
+    const [linkColor, setLinkColor] = useState('#1f2937')
+    const router = useRouter()
 
     const handleNav = () => {
         setNav(!nav)
@@ -28,16 +32,34 @@ const Navbar = () => {
 
     }, [])
 
+    useEffect(() => {
+
+        if (
+            router.asPath === '/musicApp'
+        ) {
+            setNavBg('transparent')
+            setLinkColor('#f8f8f8')
+        } else {
+            setNavBg('#ecf0f3')
+            setLinkColor('#1f2937')
+        }
+
+    }, [router])
+
 
     return (
-        <div className={shadow ? 'fixed w-full h-20 shadow-xl z-[100]' : 'fixed w-full h-20 z-[100]'}>
+        <div
+
+            style={{ backgroundColor: `${navBg}` }}
+
+            className={shadow ? 'fixed w-full h-20 shadow-xl z-[100]' : 'fixed w-full h-20 z-[100]'}>
             <div className='flex justify-between items-center w-full h-full px-2 2xl:px-16'>
                 <Link href='/'>
                     <Image src={navLogo} alt='/' width='50' height='50' />
                 </Link>
 
                 <div>
-                    <ul className='hidden md:flex'>
+                    <ul className='hidden md:flex' style={{ color: `${linkColor}` }}>
                         <Link href='/'>
                             <li className='ml-10 text-sm uppercase hover:border-b'>Home</li>
                         </Link>
@@ -79,7 +101,7 @@ const Navbar = () => {
                         </div>
 
                         <div className='border-b border-gray-300 my-4'>
-                            <p className='w-[85%] md:w-[90%] py-4'>Let's build some legendary together</p>
+                            <p className='w-[85%] md:w-[90%] py-4'>Let&apos;s build some legendary together</p>
                         </div>
 
                     </div>
@@ -103,7 +125,7 @@ const Navbar = () => {
                             </Link>
                         </ul>
                         <div className='pt-40'>
-                            <p className='uppercase tracking-widest text-[#5651e5]'>Let's Connect</p>
+                            <p className='uppercase tracking-widest text-[#5651e5]'>Let&apos;s Connect</p>
 
                             <div className='flex items-center justify-between my-4 w-full sm:w-[80%]'>
                                 <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>

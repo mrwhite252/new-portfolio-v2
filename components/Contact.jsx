@@ -10,7 +10,7 @@ import ContactImg from '../public/shake.svg'
 const Contact = () => {
     return (
         <div id='contact' className='w-full lg:h-screen'>
-            <div className="m-auto max-w-[1240px] px-2 py-16 w-full">
+            <div className="m-auto max-w-[1240px] px-2 pt-16 w-full lg:h-screen">
                 <p className='uppercase text-xl tracking-widest text-[#5651e5]'>Contact</p>
                 <h2 className='py-4'>Get In Touch</h2>
                 <div className='grid lg:grid-cols-5 gap-8'>
@@ -53,26 +53,26 @@ const Contact = () => {
                             <form>
                                 <div className='grid md:grid-cols-2 gap-4 w-full py-2'>
                                     <div className='flex flex-col'>
-                                        <label className='uppercase text-sm py-2'>Name</label>
+                                        <label className='uppercase text-sm py-1'>Name</label>
                                         <input className='border-2 rounded-lg p-3 flex border-gray-300' type="text" />
                                     </div>
                                     <div className='flex flex-col'>
-                                        <label className='uppercase text-sm py-2'>Phone Number</label>
+                                        <label className='uppercase text-sm py-1'>Phone Number</label>
                                         <input className='border-2 rounded-lg p-3 flex border-gray-300' type="text" />
                                     </div>
                                 </div>
 
                                 <div className='flex flex-col py-2'>
-                                    <label className='uppercase text-sm py-2'>Email</label>
+                                    <label className='uppercase text-sm py-1'>Email</label>
                                     <input className='border-2 rounded-lg p-3 flex border-gray-300' type="email" />
                                 </div>
                                 <div className='flex flex-col py-2'>
-                                    <label className='uppercase text-sm py-2'>Subject</label>
+                                    <label className='uppercase text-sm py-1'>Subject</label>
                                     <input className='border-2 rounded-lg p-3 flex border-gray-300' type="text" />
                                 </div>
                                 <div className='flex flex-col py-2'>
-                                    <label className='uppercase text-sm py-2'>Message</label>
-                                    <textarea className='border-2 rounded-lg p-3 flex border-gray-300' rows='10'></textarea>
+                                    <label className='uppercase text-sm py-1'>Message</label>
+                                    <textarea className='border-2 rounded-lg p-3 flex border-gray-300' rows='5'></textarea>
                                 </div>
                                 <button className='w-full p-4 text-gray-100 mt-4'>Send Message</button>
                             </form>
@@ -83,7 +83,7 @@ const Contact = () => {
                 <div className='flex justify-center py-12'>
                     <Link href='/'>
                         <div className='rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-105 ease-in duration-300'>
-                            <HiOutlineChevronDoubleUp className='m-auto text-[#5651e5]' size={30} />
+                            <HiOutlineChevronDoubleUp className='m-auto' size={30} />
                         </div>
                     </Link>
                 </div>

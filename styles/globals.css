@@ -4,10 +4,35 @@
 
 html {
   scroll-behavior: smooth !important;
+  scroll-snap-type: y mandatory;
+}
+
+.ityped-cursor {
+  opacity: 1;
+  animation: blink 0.5s infinite;
+  animation-direction: alternate;
+}
+
+.arrow {
+  position: absolute;
+  bottom: 4rem;
+  left: 50%;
+  text-decoration: none;
+  color: #fc801b;
+  animation: arrowBlink 1s infinite;
+}
+
+@keyframes arrowBlink {
+  100% {
+    opacity: 0;
+  }
 }
 
 
+
+
 @layer base {
+
   body {
     @apply bg-[#ecf0f3] text-[#1f2937] tracking-wide
   }
