@@ -21,6 +21,8 @@ const musicApp = () => {
                 <div className='col-span-4'>
                     <p>Project</p>
                     <h2>Overview</h2>
+
+
                     <p>
                         The application, which is a fully responsive single page app, was constructed using React JS and is now being hosted on Github pages. It offers users the ability to interact with the music library, allowing them to play songs and utilize features such as play/stop, auto play, toggle progress bar, and switch between different songs.
                     </p>
