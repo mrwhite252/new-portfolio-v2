@@ -26,7 +26,7 @@ const musicApp = () => {
                     </p>
 
                     <button className='px-8 py-2 mt-4 mr-8' onClick={() => window.open('https://mrwhite252.github.io/music-app-demo/', '_blank')}>Demo</button>
-                    <button className='px-8 py-2 mt-4 mr-8' onClick={() => window.open('https://mrwhite252.github.io/music-app-demo/', '_blank')}>Code</button>
+                    <button className='px-8 py-2 mt-4 mr-8' onClick={() => window.open('https://github.com/mrwhite252/music-app-demo/tree/master', '_blank')}>Code</button>
 
                 </div>
 
