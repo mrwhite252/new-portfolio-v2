@@ -1,8 +1,9 @@
-import Image from 'next/image'
-import Link from 'next/link'
 import React from 'react'
 
 import MusicAppImg from '../public/projects/music-app.png'
+import BudgetAppImg from '../public/projects/budget-planner.png'
+import TempoMakerImg from '../public/projects/tempo-maker.png'
+import ChatAppImg from '../public/projects/online-chat.png'
 import ProjectItem from './ProjectItem'
 
 const Project = () => {
@@ -15,9 +16,10 @@ const Project = () => {
                 <h2>What I&apos;ve built</h2>
                 <div className='grid md:grid-cols-2 gap-8'>
                     <ProjectItem title='Music Player' backgroundImg={MusicAppImg} projectUrl='/musicApp' />
-                    <ProjectItem title='Music Player' backgroundImg={MusicAppImg} projectUrl='/musicApp' />
-                    <ProjectItem title='Music Player' backgroundImg={MusicAppImg} projectUrl='/musicApp' />
-                    <ProjectItem title='Music Player' backgroundImg={MusicAppImg} projectUrl='/musicApp' />
+                    <ProjectItem title='Tempo Maker' backgroundImg={TempoMakerImg} projectUrl='/tempoMaker' />
+                    <ProjectItem title='Budget Planner' backgroundImg={BudgetAppImg} projectUrl='/bugetPlanner' />
+                    <ProjectItem title='Online Chat App' backgroundImg={ChatAppImg} projectUrl='/chatApp' />
+
 
                 </div>
             </div>

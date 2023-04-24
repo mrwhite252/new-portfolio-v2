@@ -25,8 +25,8 @@ const musicApp = () => {
                         The application, which is a fully responsive single page app, was constructed using React JS and is now being hosted on Github pages. It offers users the ability to interact with the music library, allowing them to play songs and utilize features such as play/stop, auto play, toggle progress bar, and switch between different songs.
                     </p>
 
-                    <button className='px-8 py-2 mt-4 mr-8'>Demo</button>
-                    <button className='px-8 py-2 mt-4 mr-8'>Code</button>
+                    <button className='px-8 py-2 mt-4 mr-8' onClick={() => window.open('https://mrwhite252.github.io/music-app-demo/', '_blank')}>Demo</button>
+                    <button className='px-8 py-2 mt-4 mr-8' onClick={() => window.open('https://mrwhite252.github.io/music-app-demo/', '_blank')}>Code</button>
 
                 </div>
 
@@ -34,8 +34,7 @@ const musicApp = () => {
                     <div className='p-2'>
                         <p className='text-center font-bold pb-2'>Technologies</p>
                         <div className='grid grid-cols-3 md:grid-cols-1'>
-                            <p className='text-gray-600 py-2 flex items-center'> <RiRadioButtonFill className='pr-1' /> React</p>
-
+                            <p className='text-gray-600 py-2 flex items-center'> <RiRadioButtonFill className='pr-1' />React</p>
                         </div>
                     </div>
                 </div>
