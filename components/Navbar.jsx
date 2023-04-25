@@ -72,9 +72,9 @@ const Navbar = () => {
                         <Link href='/#project'>
                             <li className='ml-10 text-sm uppercase hover:border-b'>Projejcts</li>
                         </Link>
-                        <Link href='/#contact'>
+                        {/* <Link href='/#contact'>
                             <li className='ml-10 text-sm uppercase hover:border-b'>Contact</li>
-                        </Link>
+                        </Link> */}
                     </ul>
                     <div className='md:hidden' onClick={handleNav}>
 
