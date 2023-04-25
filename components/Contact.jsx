@@ -29,18 +29,23 @@ const Contact = () => {
                             <div>
                                 <p className='uppercase pt-8'>Connect With Me</p>
                                 <div className='flex items-center justify-between py-4'>
-                                    <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
-                                        <FaLinkedinIn />
-                                    </div>
-                                    <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
-                                        <FaGithub />
-                                    </div>
-                                    <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
-                                        <AiOutlineMail />
-                                    </div>
-                                    <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
-                                        < BsFillPersonLinesFill />
-                                    </div>
+                                    <a href="https://www.linkedin.com/in/david-bai-chch/" target='_blank' rel="noreferrer">
+                                        <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
+                                            <FaLinkedinIn />
+                                        </div>
+                                    </a>
+
+                                    <a href="https://github.com/mrwhite252?tab=repositories" target='_blank' rel="noreferrer">
+                                        <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
+                                            <FaGithub />
+                                        </div>
+                                    </a>
+
+                                    <a href="mailto:baiminghan@email.com" target="_blank" rel="noopener noreferrer">
+                                        <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
+                                            <AiOutlineMail />
+                                        </div>
+                                    </a>
                                 </div>
                             </div>
                         </div>
