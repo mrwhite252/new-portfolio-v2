@@ -4,6 +4,8 @@ import React from 'react'
 import Aboutme from '../public/assets/1778440.JPEG'
 
 const About = () => {
+
+
     return (
         <div id='about' className='w-full md:h-screen p-2 flex items-center py-16 bg-[#0096b0]'>
             <div className='max-w-[1240px] m-auto md:grid grid-cols-3 gap-8'>
