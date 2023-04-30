@@ -6,19 +6,17 @@ import Project from '../components/Project';
 import Skills from '../components/Skills';
 
 export default function Home() {
-  return (
-
-    <div>
-      <Head>
-        <title> David Portfolio </title>
-        <meta name="description" content="David Bai's protfolio site" />
-        <link rel="icon" href="/favicon.svg" />
-      </Head>
-      <Main />
-      <About />
-      <Skills />
-      <Project />
-      {/* <Contact /> */}
-    </div>
-  )
+	return (
+		<div>
+			<Head>
+				<title> David Portfolio </title>
+				<meta name="description" content="David Bai's protfolio site" />
+				<link rel="icon" href="/favicon.svg" />
+			</Head>
+			<Main />
+			<About />
+			<Skills />
+			<Project />
+		</div>
+	);
 }
